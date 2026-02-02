@@ -1,62 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Rorein Johnson M. Nicor | Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: white;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+<meta charset="UTF-8">
+<title>Rorein Johnson M. Nicor | Portfolio</title>
 
-    .card {
-      background: rgba(0, 0, 0, 0.6);
-      padding: 40px;
-      border-radius: 15px;
-      text-align: center;
-      width: 320px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    }
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-    .profile-pic {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid white;
-      margin-bottom: 20px;
-    }
+body {
+  margin: 0;
+  background: #fff;
+  color: #222;
+}
 
-    h1 {
-      font-size: 22px;
-      margin: 10px 0;
-    }
+/* NAV */
+nav {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  border-bottom: 1px solid #eee;
+}
 
-    p {
-      font-size: 14px;
-      opacity: 0.85;
-    }
-  </style>
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 70px);
+}
+
+.side {
+  width: 35%;
+  padding: 40px;
+}
+
+.side h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.side p {
+  font-size: 15px;
+  color: #666;
+}
+
+.left {
+  text-align: right;
+}
+
+.right {
+  text-align: left;
+}
+
+/* CENTER IMAGE */
+.center {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.center img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* FOOTER NAME */
+.name {
+  text-align: center;
+  margin-top: -40px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+</style>
 </head>
+
 <body>
 
-  <div class="card">
-    <!-- PASTE YOUR IMAGE HERE -->
-    <img 
-      src="profile.jpg" 
-      alt="Profile Picture" 
-      class="profile-pic"
-    >
+<nav>
+  <strong>RN</strong>
+  <ul>
+    <li><a href="#">about</a></li>
+    <li><a href="#">portfolio</a></li>
+    <li><a href="#">contact</a></li>
+  </ul>
+</nav>
 
-    <h1>Rorein Johnson M. Nicor</h1>
-    <p>Student | Aspiring Developer</p>
+<section class="hero">
+
+  <div class="side left">
+    <h1>designer</h1>
+    <p>UI / UX focused, clean and modern layouts.</p>
   </div>
+
+  <div class="center">
+    <!-- YOUR PHOTO -->
+    <img src="profile.jpg" alt="Rorein Nicor">
+  </div>
+
+  <div class="side right">
+    <h1>&lt;coder&gt;</h1>
+    <p>Front-end developer writing simple, efficient code.</p>
+  </div>
+
+</section>
+
+<div class="name">
+  ROREIN JOHNSON M. NICOR
+</div>
 
 </body>
 </html>
